@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-app",
+    "name": "GoodBreach",
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,6 +24,34 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+      "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/InstrumentSans-Regular.ttf"
+          ],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Inter",
+                "fontDefinitions": [
+                  {
+                    "path":"./assets/fonts/InstrumentSans-Regular.ttf",
+                  },
+                  {
+                    "path":"./assets/fonts/InstrumentSans-Regular.ttf",
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": ["./assets/fonts/InstrumentSans-Regular.ttf"]
+          }
+        }
+      ]
+    ]
   }
 }

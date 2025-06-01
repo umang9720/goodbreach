@@ -5,7 +5,7 @@ export default function SplashScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.logo}>
-        <Image source={require('../assets/Layer_1.png')} style={styles.logoImg} />
+        <Image source={require('../assets/icon.png')} style={styles.logoImg} />
         <Text style={styles.title}>Good Breach</Text>
         <Text style={styles.subtitle}>Financial freedom, simplified</Text>
       </View>
@@ -20,9 +20,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logo:{
+      height: 167,
+    width: 166,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   logoImg: {
-    height: 80,
-    width: 80,
+    height: 118,
+    width: 95,
     marginBottom: 20,
   },
   title: {
