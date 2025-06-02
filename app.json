@@ -20,12 +20,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-      "plugins": [
+    "plugins": [
       [
         "expo-font",
         {
@@ -38,20 +39,27 @@
                 "fontFamily": "Inter",
                 "fontDefinitions": [
                   {
-                    "path":"./assets/fonts/InstrumentSans-Regular.ttf",
+                    "path": "./assets/fonts/InstrumentSans-Regular.ttf"
                   },
                   {
-                    "path":"./assets/fonts/InstrumentSans-Regular.ttf",
+                    "path": "./assets/fonts/InstrumentSans-Regular.ttf"
                   }
                 ]
               }
             ]
           },
           "ios": {
-            "fonts": ["./assets/fonts/InstrumentSans-Regular.ttf"]
+            "fonts": [
+              "./assets/fonts/InstrumentSans-Regular.ttf"
+            ]
           }
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bbcf43e8-a841-47ee-ba62-789cfede6b88"
+      }
+    }
   }
 }
